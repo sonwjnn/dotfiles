@@ -1,0 +1,36 @@
+os:
+  editPreset: 'nvim'
+git:
+  pagers:
+    - pager: 'delta --paging=never --tabs=2 --syntax-theme="Catppuccin Mocha" --dark --navigate --merge-conflict-ours-diff-header-style=syntax --merge-conflict-theirs-diff-header-style=syntax'
+      colorArg: always
+gui:
+  sidePanelWidth: 0.25
+  theme:
+    activeBorderColor:
+      - '#c6a0f6'
+      - bold
+    inactiveBorderColor:
+      - '#a5adcb'
+    searchingActiveBorderColor:
+      - '#eed49f'
+    optionsTextColor:
+      - '#8aadf4'
+    selectedLineBgColor:
+      - '#363a4f'
+    inactiveViewSelectedLineBgColor:
+      - '#6e738d'
+    cherryPickedCommitFgColor:
+      - '#c6a0f6'
+    cherryPickedCommitBgColor:
+      - '#494d64'
+    markedBaseCommitFgColor:
+      - '#8aadf4'
+    markedBaseCommitBgColor:
+      - '#eed49f'
+    unstagedChangesColor:
+      - '#ed8796'
+    defaultFgColor:
+      - '#cad3f5'
+authorColors:
+  '*': '#b7bdf8'

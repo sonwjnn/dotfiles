@@ -21,3 +21,4 @@ elif [ $1 == "off" ]; then
   osascript -e 'tell application "System Events" to set picture of every desktop to "/Users/stefan.pinter/.config/bluering.png"'
   aerospace reload-config
 fi
+
