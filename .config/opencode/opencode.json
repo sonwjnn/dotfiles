@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": true,
+  "lsp": true,
+  "mcp": {
+    "atuin": {
+      "type": "local",
+      "command": [
+        "/Users/sonwin/.atuin/bin/atuin",
+        "mcp"
+      ],
+      "enabled": true
+    }
+  }
+}

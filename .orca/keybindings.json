@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "keybindings": {},
+  "platforms": {
+    "darwin": {
+      "workspace.selectByIndex": [],
+      "sidebar.right.toggle": []
+    },
+    "linux": {},
+    "win32": {}
+  },
+  "migrations": {
+    "legacySettings": "done"
+  }
+}

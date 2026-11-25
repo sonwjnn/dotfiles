@@ -1,0 +1,6 @@
+{
+  "plugin": [
+    "file:///Users/thyhaly/.config/opencode/plugins/orca-opencode-status-tui/tui.js",
+    "file:///Users/sonwin/.config/opencode/plugins/orca-opencode-status-tui/tui.js"
+  ]
+}

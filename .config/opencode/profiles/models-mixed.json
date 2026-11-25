@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "small_model": "deepseek/deepseek-v4.1-flash",
+  "agent": {
+    "observer": {
+      "model": "deepseek/deepseek-v4.1-flash"
+    },
+    "build": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "variant": "max"
+    },
+    "plan": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "variant": "max"
+    },
+    "explore": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "variant": "medium"
+    },
+    "general": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "variant": "max"
+    },
+    "reviewer": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "variant": "max"
+    },
+    "test-runner": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "variant": "high"
+    }
+  }
+}

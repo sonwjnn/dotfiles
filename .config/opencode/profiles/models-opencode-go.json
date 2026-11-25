@@ -1,0 +1,34 @@
+{
+	"$schema": "https://opencode.ai/config.json",
+	"model": "opencode-go/deepseek-v4-pro",
+  "small_model": "opencode-go/deepseek-v4-flash",
+  "agent": {
+    "observer": {
+      "model": "opencode-go/mimo-v2.5"
+    },
+    "build": {
+			"model": "opencode-go/deepseek-v4-flash",
+			"variant": "max"
+		},
+		"plan": {
+			"model": "opencode-go/deepseek-v4-flash",
+			"variant": "max"
+		},
+		"explore": {
+			"model": "opencode-go/deepseek-v4-flash",
+			"variant": "high"
+		},
+		"general": {
+			"model": "opencode-go/deepseek-v4-flash",
+			"variant": "max"
+		},
+		"reviewer": {
+			"model": "opencode-go/deepseek-v4-flash",
+			"variant": "max"
+		},
+		"test-runner": {
+			"model": "opencode-go/deepseek-v4-flash",
+			"variant": "high"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "timeoutMs": 2147483647,
+  "orcaProgressTabs": {
+    "enabled": true
+  }
+}

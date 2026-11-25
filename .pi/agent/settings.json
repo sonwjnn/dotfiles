@@ -1,0 +1,128 @@
+{
+  "theme": "dark",
+  "defaultProvider": "deepseek",
+  "defaultModel": "deepseek-v4-flash",
+  "defaultThinkingLevel": "low",
+  "packages": [
+    "npm:pi-effort",
+    "npm:pi-web-access",
+    "npm:pi-subagents",
+    "npm:context-mode",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:@vigolium/piolium",
+    "npm:@runkids/figlens"
+  ],
+  "subagents": {
+    "agentOverrides": {
+      "reviewer": {
+        "thinking": "max"
+      }
+    },
+    "agentOverridesByProvider": {
+      "openai-codex": {
+        "scout": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "low"
+        },
+        "delegate": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "low"
+        },
+        "worker": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "max"
+        },
+        "reviewer": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "max"
+        },
+        "oracle": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "max"
+        },
+        "researcher": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "max"
+        },
+        "evidence-auditor": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "max"
+        },
+        "designer": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "max"
+        },
+        "security-reviewer": {
+          "model": "openai-codex/gpt-6-luna",
+          "thinking": "max"
+        }
+      },
+      "opencode-go": {
+        "scout": {
+          "model": "opencode-go/gpt-6-luna",
+          "thinking": "low"
+        },
+        "delegate": {
+          "model": "opencode-go/gpt-6-luna",
+          "thinking": "low"
+        },
+        "worker": {
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "thinking": "max"
+        },
+        "reviewer": {
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "thinking": "max"
+        },
+        "oracle": {
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "thinking": "max"
+        },
+        "researcher": {
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "thinking": "max"
+        },
+        "evidence-auditor": {
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "thinking": "max"
+        },
+        "designer": {
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "thinking": "max"
+        },
+        "security-reviewer": {
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "thinking": "max"
+        }
+      }
+    }
+  },
+  "compaction": {
+    "enabled": true
+  },
+  "enableSkillCommands": true,
+  "steeringMode": "one-at-a-time",
+  "followUpMode": "one-at-a-time",
+  "transport": "auto",
+  "fullscreenCopyOnSelect": false,
+  "fullscreenScrollbar": "auto",
+  "showHardwareCursor": false,
+  "autocompleteMaxVisible": 5,
+  "images": {
+    "blockImages": false
+  },
+  "tuiMode": "regular",
+  "fullscreenExitOutput": "transcript",
+  "hideThinkingBlock": true,
+  "pi-effort": {
+    "modelEffort": {
+      "openai-codex/gpt-6-luna": "max",
+      "opencode-go/gpt-6-luna": "max",
+      "opencode-go/deepseek-v4.1-flash": "max",
+      "openai-codex/gpt-6.1-sol": "medium",
+      "deepseek/deepseek-flash": "max",
+      "openai-codex/gpt-6.2-sol": "medium"
+    }
+  }
+}
