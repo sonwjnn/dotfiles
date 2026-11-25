@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "skillName": "dbx",
+  "skillVersion": "1.1.0",
+  "files": {
+    "SKILL.md": "8cd6264da97176544b3751d472527953265addc6999ab99ef45517a2a59a84ed",
+    "references/commands.md": "0e50acfadf791804c2ce0dadec7c60904241aa404a5463be15c77a53c5034161",
+    "references/safety.md": "d29d3d27514955239e74607617e6bd30c1f27acfad637d49ce6da00bf9839d3c",
+    "references/workflows.md": "9d834a3ec04f97dbeb6e4880883fe44ceb24586853aae1344d14c92ebb36f72c"
+  }
+}
