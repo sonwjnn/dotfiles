@@ -35,21 +35,21 @@ default-root-container-orientation = 'auto'
 
 key-mapping.preset = 'qwerty'
 
-# Bind workspaces tới monitor cứng
-# Built-in: 0-6, External (KA242Y): 7-8
-# Bind workspaces tới monitor cứng (dùng tên thay vì số để tránh bị đảo index)
-# Built-in Retina Display: 0-6, KA242Y (external): 7-8
+# Bind workspaces tới monitor cứng theo tên monitor.
+# Built-in Retina Display: 1-6; HDMI: 7-8 and 11; ARZOPA: 0, 9-10.
 [workspace-to-monitor-force-assignment]
-0 = "built-in"
+0 = "ARZOPA"
 1 = "built-in"
 2 = "built-in"
 3 = "built-in"
 4 = "built-in"
 5 = "built-in"
 6 = "built-in"
-7 = "secondary"
-8 = "secondary"
-9 = "secondary"
+7 = "HDMI"
+8 = "HDMI"
+9 = "ARZOPA"
+10 = "ARZOPA"
+11 = "HDMI"
 
 [gaps]
 #outer.bottom numbers have to match presentation.sh variables. built-in retina display is excluded from presentation mode, so this only works on external monitors.
@@ -116,7 +116,8 @@ cmd-shift-up = 'move up'
 cmd-shift-right = 'move right'
 
 #cmd0 = 'summon-workspace 1'  # Notes
-cmd-0 = 'workspace --auto-back-and-forth 0'  # Notes
+cmd-0 = 'workspace --auto-back-and-forth 0'  # ARZOPA / Obsidian + Spotify
+cmd-alt-0 = 'workspace --auto-back-and-forth 10'  # ARZOPA
 cmd-1 = 'workspace --auto-back-and-forth 1'  # Terminal
 cmd-2 = 'workspace --auto-back-and-forth 2'  # Browser
 cmd-3 = 'workspace --auto-back-and-forth 3'  # AltBrowser
@@ -240,7 +241,7 @@ check-further-callbacks = true
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = ['layout tiling', 'move-node-to-workspace 7']
+run = ['layout tiling', 'move-node-to-workspace 0']
 check-further-callbacks = true
 
 [[on-window-detected]]
@@ -378,7 +379,7 @@ check-further-callbacks = true
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = ['layout tiling', 'move-node-to-workspace 9']
+run = ['layout tiling', 'move-node-to-workspace 0']
 check-further-callbacks = true
 
 [[on-window-detected]]
