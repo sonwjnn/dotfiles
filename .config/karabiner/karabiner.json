@@ -5,6 +5,25 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Cmd+Shift+L: Lock Screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["command", "shift"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": ["left_control", "left_command"],
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Swap fn and left_control",
                         "manipulators": [
                             {

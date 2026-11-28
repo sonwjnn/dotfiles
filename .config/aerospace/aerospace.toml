@@ -36,17 +36,17 @@ default-root-container-orientation = 'auto'
 key-mapping.preset = 'qwerty'
 
 # Bind workspaces tới monitor cứng theo tên monitor.
-# Built-in Retina Display: 1-6; HDMI: 7-8 and 11; ARZOPA: 0, 9-10.
+# HDMI: 1-6 and 11; Built-in Retina Display: 7-8; ARZOPA: 0, 9-10.
 [workspace-to-monitor-force-assignment]
 0 = "ARZOPA"
-1 = "built-in"
-2 = "built-in"
-3 = "built-in"
-4 = "built-in"
-5 = "built-in"
-6 = "built-in"
-7 = "HDMI"
-8 = "HDMI"
+1 = "HDMI"
+2 = "HDMI"
+3 = "HDMI"
+4 = "HDMI"
+5 = "HDMI"
+6 = "HDMI"
+7 = "built-in"
+8 = "built-in"
 9 = "ARZOPA"
 10 = "ARZOPA"
 11 = "HDMI"
@@ -109,7 +109,6 @@ cmd-right = 'focus --boundaries all-monitors-outer-frame --boundaries-action sto
 cmd-shift-h = 'move left'
 cmd-shift-j = 'move down'
 cmd-shift-k = 'move up'
-cmd-shift-l = 'move right'
 cmd-shift-left = 'move left'
 cmd-shift-down = 'move down'
 cmd-shift-up = 'move up'
@@ -386,6 +385,12 @@ check-further-callbacks = true
 if.app-id = 'com.bitwarden.desktop'
 run = ['layout floating']
 
+
+[[on-window-detected]]
+# Keep Zalo's image viewer floating while the main chat remains tiled.
+if.app-id = 'com.vng.zalo'
+if.window-title-regex-substring = '^Zalo Photo$'
+run = ['move-node-to-workspace 4', 'layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.vng.zalo'
